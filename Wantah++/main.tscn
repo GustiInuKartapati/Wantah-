@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://djh56scbl1hb7"]
+
+[ext_resource type="Script" path="res://pocong.gd" id="1_hdm2o"]
+
+[sub_resource type="Curve2D" id="Curve2D_u433m"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 45, 64, 0, 0, 0, 0, 106, 81, 0, 0, 0, 0, 187, 97, 0, 0, 0, 0, 231, 128, 0, 0, 0, 0, 236, 176, 0, 0, 0, 0, 246, 252, 0, 0, 0, 0, 247, 304, 0, 0, 0, 0, 236, 356, 0, 0, 0, 0, 249, 417, 0, 0, 0, 0, 280, 429, 0, 0, 0, 0, 316, 394, 0, 0, 0, 0, 332, 356, 0, 0, 0, 0, 384, 313, 0, 0, 0, 0, 434, 279, 0, 0, 0, 0, 487, 253, 0, 0, 0, 0, 548, 232, 0, 0, 0, 0, 603, 222, 0, 0, 0, 0, 647, 228, 0, 0, 0, 0, 667, 246, 0, 0, 0, 0, 693, 314, 0, 0, 0, 0, 718, 386, 0, 0, 0, 0, 752, 423, 0, 0, 0, 0, 812, 414, 0, 0, 0, 0, 859, 395, 0, 0, 0, 0, 900, 381, 0, 0, 0, 0, 938, 396, 0, 0, 0, 0, 965, 418, 0, 0, 0, 0, 990, 455, 0, 0, 0, 0, 1036, 486, 0, 0, 0, 0, 1083, 497, 0, 0, 0, 0, 1143, 520, 0, 0, 0, 0, 1150, 527, 0, 0, 0, 0, 1156, 539)
+}
+point_count = 33
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rmnv"]
+size = Vector2(65, 63)
+
+[sub_resource type="Gradient" id="Gradient_oqfap"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a4dt7"]
+gradient = SubResource("Gradient_oqfap")
+
+[node name="Main" type="Node2D"]
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_u433m")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+z_index = 2
+position = Vector2(45, 64)
+rotation = 0.271792
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Path2D/PathFollow2D"]
+z_index = 1
+position = Vector2(-48.192, -61.6322)
+rotation = -0.0508037
+scale = Vector2(1, 1)
+script = ExtResource("1_hdm2o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/CharacterBody2D"]
+position = Vector2(45.5, 63.5)
+shape = SubResource("RectangleShape2D_4rmnv")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Path2D/PathFollow2D/CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/CharacterBody2D"]
+position = Vector2(45, 63)
+texture = SubResource("GradientTexture2D_a4dt7")
+
+[node name="Polygon2D" type="Polygon2D" parent="Path2D"]
+z_index = 1
+color = Color(0.776471, 0.615686, 0.368627, 1)
+polygon = PackedVector2Array(-24, 15, -26, 37, -25, 44, -25, 74, -25, 99, -15, 109, -5, 115, 1, 121, 12, 128, 24, 128, 48, 132, 67, 134, 110, 136, 139, 139, 174, 146, 180, 160, 184, 181, 186, 202, 186, 220, 188, 240, 190, 275, 191, 289, 192, 311, 185, 330, 175, 347, 136, 367, 118, 386, 106, 398, 110, 420, 120, 441, 141, 458, 159, 472, 169, 480, 190, 489, 216, 493, 244, 495, 277, 493, 331, 482, 355, 453, 374, 414, 394, 378, 396, 374, 404, 358, 421, 345, 432, 336, 452, 323, 490, 313, 542, 308, 560, 310, 629, 334, 633, 347, 643, 376, 652, 417, 670, 466, 687, 495, 703, 509, 749, 520, 768, 522, 802, 507, 823, 488, 868, 479, 914, 481, 946, 500, 964, 515, 986, 549, 1021, 568, 1064, 578, 1093, 587, 1108, 596, 1122, 606, 1131, 615, 1138, 616, 1149, 616, 1160, 612, 1166, 602, 1170, 575, 1169, 556, 1169, 533, 1170, 513, 1173, 493, 1181, 467, 1178, 450, 1161, 434, 1146, 430, 1132, 429, 1111, 429, 1101, 429, 1074, 429, 1059, 419, 1026, 400, 1014, 366, 1006, 346, 999, 329, 986, 306, 976, 297, 956, 290, 938, 288, 913, 294, 889, 305, 842, 317, 782, 315, 779, 297, 776, 267, 785, 212, 781, 175, 754, 159, 733, 152, 620, 136, 585, 141, 525, 164, 486, 196, 447, 231, 361, 253, 290, 242, 282, 210, 279, 147, 279, 113, 275, 89, 264, 78, 245, 69, 200, 55, 126, 37, 111, 29, 82, 21, -9, 10)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(0, 0.435294, 0, 1)
