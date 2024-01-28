@@ -30,7 +30,6 @@ rotation = 0.271792
 z_index = 1
 position = Vector2(-48.192, -61.6322)
 rotation = -0.0508037
-scale = Vector2(1, 1)
 script = ExtResource("1_hdm2o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/CharacterBody2D"]
