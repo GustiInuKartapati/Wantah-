@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxlbr3s8qit40"]
+[gd_scene load_steps=2 format=3 uid="uid://dosltjlwxh000"]
 
 [ext_resource type="PackedScene" uid="uid://ui23hgxcfg02" path="res://towers/red_tower_panel.tscn" id="1_ryumd"]
 
@@ -19,31 +19,4 @@ theme_override_constants/h_separation = 60
 theme_override_constants/v_separation = 150
 
 [node name="RedTowerPanel" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel2" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel3" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel4" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel5" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel6" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel7" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel8" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel9" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
-layout_mode = 2
-
-[node name="RedTowerPanel10" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
 layout_mode = 2

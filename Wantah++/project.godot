@@ -22,7 +22,7 @@ window/size/viewport_height=1408
 window/size/window_width_override=853
 window/size/window_height_override=469
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
+window/stretch/aspect="ignore"
 
 [rendering]
 
