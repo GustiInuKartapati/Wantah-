@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxlbr3s8qit40"]
+
+[ext_resource type="PackedScene" uid="uid://ui23hgxcfg02" path="res://towers/red_tower_panel.tscn" id="1_ryumd"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 2112.0
+offset_right = 2560.0
+offset_bottom = 1408.0
+
+[node name="FlowContainer" type="FlowContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 384.0
+offset_bottom = 4114.0
+theme_override_constants/h_separation = 60
+theme_override_constants/v_separation = 150
+
+[node name="RedTowerPanel" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel2" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel3" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel4" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel5" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel6" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel7" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel8" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel9" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2
+
+[node name="RedTowerPanel10" parent="Panel/FlowContainer" instance=ExtResource("1_ryumd")]
+layout_mode = 2

@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn1c50bk8fe7o"]
+
+[ext_resource type="Script" path="res://towers/red_tower.gd" id="1_f7w6c"]
+[ext_resource type="Texture2D" uid="uid://c4v748s4ao8fe" path="res://assets/PNG/Default size/towerDefense_tile250.png" id="2_w0384"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1j7h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t1e40"]
+radius = 128.0
+
+[node name="RedTower" type="StaticBody2D"]
+script = ExtResource("1_f7w6c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_v1j7h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(1.24, 1.24)
+texture = ExtResource("2_w0384")
+
+[node name="Aim" type="Marker2D" parent="."]
+position = Vector2(64, 0)
+
+[node name="mobDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mobDetection"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_t1e40")
+
+[node name="BulletContainer" type="Node" parent="."]
+
+[connection signal="body_entered" from="mobDetection" to="." method="_on_mob_detection_body_entered"]
+[connection signal="body_exited" from="mobDetection" to="." method="_on_mob_detection_body_exited"]
