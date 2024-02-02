@@ -8,6 +8,7 @@ var tempPos
 func _on_gui_input(event):
 	var tempTower = tower.instantiate()
 	if event is InputEventMouseButton and event.button_mask == 1:
+		tempPos = event.global_position
 		add_child(tempTower)
 		tempTower.process_mode = Node.PROCESS_MODE_DISABLED
 		#print("left click down")
