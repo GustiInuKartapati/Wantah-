@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://dosltjlwxh000"]
+[gd_scene load_steps=2 format=3 uid="uid://bxlbr3s8qit40"]
 
 [ext_resource type="PackedScene" uid="uid://ui23hgxcfg02" path="res://towers/red_tower_panel.tscn" id="1_ryumd"]
 

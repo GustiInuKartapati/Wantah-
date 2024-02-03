@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://qd8tsqgbcoq3" path="res://tile_map.tscn" id="1_8mkrv"]
 [ext_resource type="Script" path="res://PathSpawner.gd" id="2_hasyw"]
-[ext_resource type="PackedScene" uid="uid://dosltjlwxh000" path="res://ui.tscn" id="3_tpdpn"]
+[ext_resource type="PackedScene" uid="uid://bxlbr3s8qit40" path="res://ui.tscn" id="3_tpdpn"]
 
 [node name="Main" type="Node2D"]
 

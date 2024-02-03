@@ -6,7 +6,6 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vr2vr"]
 
 [node name="RedBullet" type="CharacterBody2D"]
-rotation = 2.39285
 script = ExtResource("1_sjnm0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bj2gxaovk66xb"]
 
 [ext_resource type="Script" path="res://mobs/pocong.gd" id="1_u4xmx"]
-[ext_resource type="Texture2D" uid="uid://nrpgr28peaxl" path="res://Gim project 2/arwah nyi roro kidul 1.png" id="2_vo0ed"]
+[ext_resource type="Texture2D" uid="uid://b1srvag7p2yb7" path="res://assets/PNG/Default size/towerDefense_tile245.png" id="2_oi77f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5y8wc"]
 
@@ -9,11 +9,9 @@
 script = ExtResource("1_u4xmx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1.90735e-06, 0)
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("2_vo0ed")
+scale = Vector2(1.655, 1.655)
+texture = ExtResource("2_oi77f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, 0)
 scale = Vector2(2.425, 2.425)
 shape = SubResource("CircleShape2D_5y8wc")
