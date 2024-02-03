@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bn1c50bk8fe7o"]
 
 [ext_resource type="Script" path="res://towers/red_tower.gd" id="1_f7w6c"]
-[ext_resource type="Texture2D" uid="uid://1rwwm24tt0dx" path="res://LEVEL 1 GIM-20240203T145650Z-001/LEVEL 1 GIM/background/lvl1_jimat.png" id="2_etb3u"]
+[ext_resource type="Texture2D" uid="uid://c4v748s4ao8fe" path="res://assets/PNG/Default size/towerDefense_tile250.png" id="2_w0384"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1j7h"]
 
@@ -77,19 +77,22 @@ script = ExtResource("1_f7w6c")
 scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_v1j7h")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-8.93982, -2.38115)
-scale = Vector2(0.217157, 0.131822)
-texture = ExtResource("2_etb3u")
-
 [node name="Aim" type="Marker2D" parent="."]
-position = Vector2(64, 0)
+position = Vector2(41, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(1.24, 1.24)
+texture = ExtResource("2_w0384")
 
 [node name="mobDetection" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mobDetection"]
 scale = Vector2(3.475, 3.475)
 shape = SubResource("CircleShape2D_t1e40")
+
+[node name="BulletContainer" type="Node" parent="."]
 
 [node name="Area" type="Panel" parent="."]
 modulate = Color(0, 0, 0, 0.341176)
@@ -98,8 +101,6 @@ offset_top = -448.0
 offset_right = 448.0
 offset_bottom = 448.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_efjpk")
-
-[node name="BulletContainer" type="Node" parent="."]
 
 [node name="Upgrade" type="Node" parent="."]
 

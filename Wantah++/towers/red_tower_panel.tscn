@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ui23hgxcfg02"]
 
 [ext_resource type="Script" path="res://towers/red_tower_panel.gd" id="1_ggfyl"]
-[ext_resource type="Texture2D" uid="uid://1rwwm24tt0dx" path="res://LEVEL 1 GIM-20240203T145650Z-001/LEVEL 1 GIM/background/lvl1_jimat.png" id="2_1aphs"]
+[ext_resource type="Texture2D" uid="uid://c4v748s4ao8fe" path="res://assets/PNG/Default size/towerDefense_tile250.png" id="2_1pjs7"]
 
 [node name="RedTowerPanel" type="Panel"]
 custom_minimum_size = Vector2(130, 130)
@@ -9,7 +9,7 @@ script = ExtResource("1_ggfyl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(64, 64)
-scale = Vector2(0.177778, 0.148148)
-texture = ExtResource("2_1aphs")
+scale = Vector2(2, 2)
+texture = ExtResource("2_1pjs7")
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
