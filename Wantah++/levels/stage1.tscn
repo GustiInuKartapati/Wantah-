@@ -14,6 +14,5 @@ curve = SubResource("Curve2D_hqlgi")
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(1344, 320)
 rotation = 1.5708
-scale = Vector2(1, 1)
 
 [node name="Pocong" parent="PathFollow2D" instance=ExtResource("1_oho2w")]
