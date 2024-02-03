@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://m4tisi4de6wl"]
+
+[ext_resource type="PackedScene" uid="uid://bj2gxaovk66xb" path="res://mobs/pocong.tscn" id="1_xv45k"]
+[ext_resource type="Texture2D" uid="uid://blkm1rcfr02y6" path="res://LEVEL 1 GIM-20240203T145650Z-001/LEVEL 1 GIM/background/rumah belanda level 1.png" id="2_kqc34"]
+
+[sub_resource type="Curve2D" id="Curve2D_l4uen"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1344, 256, 0, 0, 0, 0, 1344, 512, 0, 0, 0, 0, 1024, 512, 0, 0, 0, 0, 704, 576, 0, 0, 0, 0, 512, 512, 0, 0, 0, 0, 320, 576, 0, 0, 0, 0, 320, 704, 0, 0, 0, 0, 320, 832, 0, 0, 0, 0, 320, 1024, 0, 0, 0, 0, 320, 1152, 0, 0, 0, 0, 576, 1152, 0, 0, 0, 0, 960, 1152, 0, 0, 0, 0, 1088, 1152, 0, 0, 0, 0, 1088, 896, 0, 0, 0, 0, 1152, 768, 0, 0, 0, 0, 1472, 768, 0, 0, 0, 0, 1536, 768, 0, 0, 0, 0, 1664, 768, 0, 0, 0, 0, 1792, 768, 0, 0, 0, 0, 1856, 704, 0, 0, 0, 0, 1856, 512, 0, 0, 0, 0, 2240, 512)
+}
+point_count = 22
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_l4uen")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(1344, 256)
+rotation = 1.5708
+
+[node name="Pocong" parent="PathFollow2D" instance=ExtResource("1_xv45k")]
+
+[node name="RumahBelandaLevel1" type="Sprite2D" parent="."]
+position = Vector2(1280, 708)
+scale = Vector2(0.666667, 0.648148)
+texture = ExtResource("2_kqc34")
