@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://tgnqd8a5udvm"]
 
-[ext_resource type="Texture2D" uid="uid://bb74vpnde6qcc" path="res://assets/PNG/Default size/towerDefense_tile251.png" id="1_kmqjy"]
 [ext_resource type="Script" path="res://towers/red_bullet.gd" id="1_sjnm0"]
+[ext_resource type="Texture2D" uid="uid://bkryhduyv0n3d" path="res://LEVEL 1 GIM-20240203T145650Z-001/LEVEL 1 GIM/background/levl1_portal.png" id="2_08c0g"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vr2vr"]
 
@@ -14,8 +14,9 @@ scale = Vector2(0.725, 1.015)
 shape = SubResource("CapsuleShape2D_vr2vr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.85, 0.86)
-texture = ExtResource("1_kmqjy")
+position = Vector2(0.0754337, 0.448833)
+scale = Vector2(0.0403488, 0.0779427)
+texture = ExtResource("2_08c0g")
 
 [node name="Area2D" type="Area2D" parent="."]
 
